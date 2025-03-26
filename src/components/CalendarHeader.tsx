@@ -47,8 +47,7 @@ const CalendarHeader = ({
   return (
     <header className="flex items-center justify-between p-4 bg-background border-b">
       <h1 className="text-2xl font-bold">Calendar</h1>
-
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 flex-wrap">
         <div className="flex items-center">
           <Button
             variant="outline"

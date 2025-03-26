@@ -51,11 +51,13 @@ const DayCell = ({
 }: DayCellProps) => {
   return (
     <div
-      className={cn(
-        "h-[133px] border border-gray-200 p-2 overflow-hidden bg-white",
-        !isCurrentMonth && "bg-gray-50 text-gray-400",
-        isToday && "ring-2 ring-blue-500",
-      )}
+      className={
+        cn(
+          "h-[133px] border border-gray-200 p-2 overflow-hidden ",
+          !isCurrentMonth && " text-gray-400",
+          isToday && "ring-2 ring-blue-500",
+        ) + " bg-[#a64b4b]"
+      }
       onClick={() => onAddEvent()}
     >
       <div className="flex justify-between items-start">
@@ -69,7 +71,6 @@ const DayCell = ({
           {date}
         </span>
       </div>
-
       <div className="mt-1 space-y-1 max-h-[100px] overflow-y-auto">
         {events.map((event) => (
           <div

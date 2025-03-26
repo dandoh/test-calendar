@@ -56,7 +56,7 @@ const DayCell = ({
           "h-[133px] border border-gray-200 p-2 overflow-hidden ",
           !isCurrentMonth && " text-gray-400",
           isToday && "ring-2 ring-blue-500",
-        ) + " bg-[#bebebe]"
+        ) + " bg-[#b56161]"
       }
       onClick={() => onAddEvent()}
     >
